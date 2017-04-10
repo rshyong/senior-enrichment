@@ -11,5 +11,4 @@ module.exports = db.define('students', {
             notEmpty: true
         }
     },
-    campus: Sequelize.STRING
 })
