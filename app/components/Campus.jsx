@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { browserHistory } from 'react-router';
 import axios from 'axios';
 
 export default class Campus extends Component {
@@ -11,6 +12,9 @@ export default class Campus extends Component {
         axios.post('/api/campus', {
             name: e.target.name.value,
             image: e.target.image.value
+        })
+        .then(()=> {
+            browserHistory.push('/');
         })
         .catch(err => {
         console.log('campus post unsuccessful', err);
