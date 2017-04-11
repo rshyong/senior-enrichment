@@ -1,4 +1,13 @@
-.campus > img{
+.campusPage, .studentsPage {
+    text-align: center;
+}
+
+.campus, .student {
+    display: inline-block;
+    margin-right: 2vw;
+}
+
+.campus > img {
     height: 20vh;
     width: 20vw;
 }
