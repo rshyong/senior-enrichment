@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 
 const Main = props => {
     const { campuses, students } = props;
-    console.log(campuses, students);
     return (
         <div>
             <div className='campusPage'>
